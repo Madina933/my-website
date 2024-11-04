@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка специалиста</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Имя и подпись -->
+        <header>
+            <h1>Ходова Ирина</h1>
+            <p>Консультант по питанию</p>
+        </header>
+        
+        <!-- Заголовок, подзаголовок и фото -->
+        <section class="main-content">
+            <div class="text-block">
+                <h2>Чем я занимаюсь</h2>
+                <p>Консультант по питанию помогает людям улучшить своё здоровье и самочувствие с помощью правильного питания.</p>
+                <button id="open-form-btn">Оставить заявку</button>
+            </div>
+            <div class="photo-block">
+                <img src="https://images.unsplash.com/photo-1721332149069-a470150ef51c?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Фото специалиста">
+            </div>
+        </section>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-form-btn">&times;</span>
+            <h3>Оставить заявку</h3>
+            <form>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
